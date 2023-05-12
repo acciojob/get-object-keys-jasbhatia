@@ -3,6 +3,8 @@ let student={
 	name:'jas'
 }
 
-student.prototype.getKeys=function(obj){
-	return obj[keys];
+Object.prototype.getKeys=function(){
+	return Object.keys(this);
 }
+
+console.log(student.getKeys());
